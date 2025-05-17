@@ -24,7 +24,7 @@ const loadCategoriesbutton = (categoryName, btnElement) => {
 };
 
 
-
+// display categories item 
 const displayCategories = (items) => {
   const buttonContainer = document.getElementById("categories");
   buttonContainer.innerHTML = ""; // clear previous buttons if any
@@ -127,6 +127,9 @@ const displayCard = (pets) => {
     petCard.appendChild(card);
   });
 };
+
+// get the date in footer 
+document.getElementById('date').textContent=new Date().getFullYear();
 
 loadCategories();
 loadCard();
